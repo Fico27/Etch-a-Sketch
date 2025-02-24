@@ -1,14 +1,16 @@
 .iHoldBoxes div {
-    height: 45px;
-    width: 45px;
+    height: 2.5rem;
+    width: 2.5rem;
     border: 2px solid black;
-    margin: 4px 4px
+    margin: 5px 5px;
+    
 }
 
 .iHoldBoxes {
     width: 960px;
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 3;
 }
 
 body {
