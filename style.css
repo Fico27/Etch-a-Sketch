@@ -1,7 +1,6 @@
 
 .iHoldBoxes {
     width: 960px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,27 +8,27 @@
     margin:50px auto;
 }
 
-/* body {
 
-
-
-} */
 .box {
     height: 25px;
     width: 25px;
-    border: 2px solid black;
-    margin: 5px 5px;
+    border: 1px solid black;
+
 }
 
 .row {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
     flex: auto;
+    margin: 0;
+    padding: 0;
 }
 
 button {
    margin: 0 auto;
+
     
 }
