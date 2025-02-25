@@ -1,6 +1,5 @@
 
-let num = 25;
-let count = 0;
+let num = 16;
 const boxHolder = document.querySelector(".iHoldBoxes")
 const btn = document.querySelector(".iMakeNewBoxes")
 const box = document.createElement("div");
@@ -35,5 +34,11 @@ btn.addEventListener("click", () => {
         boxHolder.removeChild(boxHolder.lastChild);
       }
     num = prompt("Please enter a number up to 100!")
-    rowGenerator(num)
+    
+
+    if (num > 100){
+        alert("100 is the max!!")
+    }else {
+        rowGenerator(num)
+    }
 })
