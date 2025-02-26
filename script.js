@@ -36,7 +36,13 @@ btn.addEventListener("click", () => {
 
     if (num > 100) {
         alert("100 is the max!!")
-    } else if (num >= 29 && num < 60) {
+    } else if (num > 1 && num < 29) {
+        rowGenerator(num)
+        boxSizeEdit.forEach(element => {
+            element.style.height = "25px"
+            element.style.width = "25px"
+        });
+    }else if (num >= 29 && num < 60) {
         rowGenerator(num)
         const boxSizeEdit = document.querySelectorAll(".box");
 
@@ -58,8 +64,8 @@ btn.addEventListener("click", () => {
         rowGenerator(num)
         const boxSizeEdit = document.querySelectorAll(".box");
         boxSizeEdit.forEach(element => {
-            element.style.height = "7px"
-            element.style.width = "7px"
+            element.style.height = "6px"
+            element.style.width = "6px"
         });
     }
 })
