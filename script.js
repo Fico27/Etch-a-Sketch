@@ -5,8 +5,6 @@ const btn = document.querySelector(".iMakeNewBoxes")
 const box = document.createElement("div");
 
 
-
-
 function rowGenerator(num) {
 
 
@@ -38,17 +36,30 @@ btn.addEventListener("click", () => {
 
     if (num > 100) {
         alert("100 is the max!!")
-    } else if (num > 50 && num < 60) {
+    } else if (num >= 29 && num < 60) {
         rowGenerator(num)
         const boxSizeEdit = document.querySelectorAll(".box");
-        
-            boxSizeEdit.style.height = "10px"
-            boxSizeEdit.style.width = "10px"
 
-       
-    } else {
-        box.style.height = "10px";
-        box.style.width = "10px";
+        // querySelectorAll puts everything in an Array. Using for each I can adjust each box class
+        boxSizeEdit.forEach(element => {
+            element.style.height = "15px"
+            element.style.width = "15px"
+        });
+
+    } else if (num > 60 && num < 74) {
         rowGenerator(num)
+        const boxSizeEdit = document.querySelectorAll(".box");
+        boxSizeEdit.forEach(element => {
+            element.style.height = "10px"
+            element.style.width = "10px"
+        });
+        
+    } else {
+        rowGenerator(num)
+        const boxSizeEdit = document.querySelectorAll(".box");
+        boxSizeEdit.forEach(element => {
+            element.style.height = "7px"
+            element.style.width = "7px"
+        });
     }
 })

@@ -1,12 +1,13 @@
 
 .iHoldBoxes {
-    width: 960;
+    width: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:50px auto;
- 
+    margin:0 auto;
+    /* padding-bottom: 25px; */
+    max-height: 960px;
 }
 
 
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
 
 }
 
@@ -31,3 +32,6 @@ button {
     
 }
 
+.spacer{
+    margin-top: 20px;
+}
