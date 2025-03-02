@@ -1,28 +1,39 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    background-color: #006C67;
 }
 
+h1{
+    color: #FFEBC6;
+}
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .iHoldBoxes {
     width: 960px;
+    height: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin:0 auto;
+
     /* padding-bottom: 25px; */
-    max-height: 960px;
+    
 }
 
 .box {
     height: 25px;
     width: 25px;
-    border: 1px solid black;
+    border: 1px solid #F194B4;
+    background-color: #003844;
 }
 
 .row {
@@ -40,6 +51,6 @@ button {
     
 }
 
-.spacer{
+/* .spacer{
     margin-top: 20px;
-}
+} */

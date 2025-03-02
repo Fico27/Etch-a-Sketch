@@ -15,7 +15,7 @@ function rowGenerator(num) {
         for (let j = 0; j < num; j++) {
             const box = document.createElement("div");
             box.addEventListener("mouseover", (e) => {
-                e.target.style.backgroundColor = "black";
+                e.target.style.backgroundColor = "#FFB100";
             })
             box.classList.add("box")
             rowContainer.appendChild(box)
@@ -48,11 +48,11 @@ btn.addEventListener("click", () => {
 
         // querySelectorAll puts everything in an Array. Using for each I can adjust each box class
         boxSizeEdit.forEach(element => {
-            element.style.height = "15px"
-            element.style.width = "15px"
+            element.style.height = "14px"
+            element.style.width = "14px"
         });
 
-    } else if (num > 60 && num < 74) {
+    } else if (num >= 60 && num < 74) {
         rowGenerator(num)
         const boxSizeEdit = document.querySelectorAll(".box");
         boxSizeEdit.forEach(element => {
